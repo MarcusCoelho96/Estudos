@@ -1,0 +1,51 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: brown;
+    margin-bottom: 50px;
+    padding: 10px;
+    box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.486);
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+div#container{
+    overflow-x: auto;
+}
+table{
+    width: 800px;
+    height: 400px;
+    border-collapse: collapse;
+    margin: auto;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+table tr th, table tr td{
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+th#point{
+    background-color: white;
+}
+th{
+    background-color: burlywood;
+}
+th.hora{
+    text-align: right;
+    background-color: bisque;
+}
+td:nth-child(odd){
+    background-color: rgb(197, 191, 191);
+}
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+}

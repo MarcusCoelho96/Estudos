@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário 007</title>
+</head>
+<body>
+    <h1>Preencha o formulário</h1>
+    <form action="form.php" method="post">
+
+        <fieldset>
+            <legend>Formulário</legend>
+            <label for="idNot">Nota: </label>
+            <input type="range" name="not" id="idNot" min="0" max="10" step=".1"
+            oninput="barra()">
+            
+            <output id="outNot"></output>
+        </fieldset><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    <script>
+        function barra(){
+            outNot.innerHTML= Number(idNot.value)
+        }
+    </script>
+</body>
+</html>

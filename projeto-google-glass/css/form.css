@@ -1,0 +1,38 @@
+@charset "UTF8";
+form{
+    width: 500px;
+    margin: auto;
+}
+input, textarea{
+    font-weight: normal;
+    font-size: 13pt;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+input:hover, textarea:hover{
+    background-color: moccasin;
+}
+legend{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bold;
+}
+fieldset{
+    border-color: #cecece;
+    margin: 20px;
+    width: 500px;
+}
+fieldset#sexo{
+    width: 98px;
+}
+fieldset#pdd{
+    background: url(../_imagens/glass-oculos-preto-peq.png) no-repeat 95% 95%;
+}
+fieldset#usu{
+    background: url(../_imagens/glass-oculos-preto-peq.png) no-repeat 95% 95%;
+}
+fieldset#end{
+    background: url(../_imagens/glass-oculos-preto-peq.png) no-repeat 95% 95%;
+}
+fieldset#msg{
+    background: url(../_imagens/glass-oculos-preto-peq.png) no-repeat 95% 95%;
+}

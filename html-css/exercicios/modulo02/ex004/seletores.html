@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        body{
+            background-image: linear-gradient(90deg, rgba(152, 255, 174, 0.438), rgb(152, 255, 174));
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #principal{
+            background-color: rgb(0, 61, 0);
+            color: white;
+            text-align: center;
+        }
+        .titulo{
+            color: rgb(0, 100, 0);
+            text-align: right;
+        }
+        p{
+            text-indent: 20px;
+            text-shadow: 1px 1px 1px white;
+        }
+        .basico{
+            color: rgb(49, 74, 156);
+        }
+        .intermediario{
+            color: rgb(156, 149, 49);
+        }
+        .avancado{
+            color: rgb(156, 49, 49);
+        }
+        .title{
+            background-color: rgba(0, 0, 0, 0.253);
+        }
+        .princ::after{
+            content: '*';
+        }
+    </style>
+</head>
+<body>
+    <h1 id="principal" class="princ">Criando sites com HTML5 & CSS3</h1><!--Pode-se usar 'id' e 'class' juntos em um elemento-->
+    <h2 class="titulo title">Aprenda HTML5</h2> <!--Pode-se usar várias 'class' em um elemento-->
+    <h3 class="basico">HTML5 básico</h3>
+    <p><span>Lorem ipsum</span>, dolor sit amet consectetur adipisicing elit. Maxime ex dolore nulla cupiditate rerum dicta earum iste ad quos facilis! Iste quos distinctio deleniti esse, sed numquam nostrum. Voluptatem, odio.</p>
+    <h3 class="intermediario">HTML5 Intermediário</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ex dolore nulla cupiditate rerum dicta earum iste ad quos facilis! Iste quos distinctio deleniti esse, sed numquam nostrum. Voluptatem, odio.</p>
+    <h3 class="avancado">HTML5 Avançado</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ex dolore nulla cupiditate rerum dicta earum iste ad quos facilis! Iste quos distinctio deleniti esse, sed numquam nostrum. Voluptatem, odio.</p>
+    <h2 class="titulo title">Aprenda CSS3</h2>
+    <h3 class="basico">CSS3 básico</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ex dolore nulla cupiditate rerum dicta earum iste ad quos facilis! Iste quos distinctio deleniti esse, sed numquam nostrum. Voluptatem, odio.</p>
+    <h3 class="intermediario">CSS3 Intermediário</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ex dolore nulla cupiditate rerum dicta earum iste ad quos facilis! Iste quos distinctio deleniti esse, sed numquam nostrum. Voluptatem, odio.</p>
+    <h3 class="avancado">CSS3 Avançado</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime ex dolore nulla cupiditate rerum dicta earum iste ad quos facilis! Iste quos distinctio deleniti esse, sed numquam nostrum. Voluptatem, odio.</p>
+
+</body>
+</html>

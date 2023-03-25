@@ -1,0 +1,16 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(58, 58, 238);
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    text-shadow: 1px 1px 6px rgba(0, 0, 160, 0.664);
+    font-size: 2em;
+}

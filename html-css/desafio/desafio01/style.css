@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #84e1ad;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: linear-gradient(180deg, #36C375, #298C55, #1A5C38);
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.384);
+    width: 100%;
+    top: 0;
+    display: inline-block;
+}
+nav > ul > li{
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 10px;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+section, aside{
+    background-color: white;
+    padding: 10px;
+    margin-top: 0;
+}
+#svideo{
+    padding: 0;
+}
+p{
+    text-align: justify;
+    font-size: 1.2em;
+    text-indent: 20px;
+}
+header > h1{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+header > p{
+    text-align: center;
+}
+#titulo{
+    font-family: idroid;
+    color: #2b6847;
+    font-size: 2em;
+}
+.titulo{
+    font-family: idroid;
+    color: #236340;
+    background-image: linear-gradient(45deg, #36c37654, #298c561a, #36c37600);
+}
+main{
+    width: 830px;
+    margin: auto;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.356);
+}
+aside{
+    width: 810px;
+    margin: auto;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.356);
+    border-radius: 0 0 10px 10px;
+}
+footer > p{
+    margin: 0;
+    text-align: center;
+}
+footer{
+    background-color: #1a5c38;
+    color: white;
+    padding: 2px;
+    margin-top: 8px;
+}
+#bugdroid{
+    margin: auto;
+    display: block;
+}
+#video{
+    background-color: #1a5c38;
+    width: 100%;
+    padding: 20px 0 20px 0; 
+}
+#video > iframe{
+    display: block;
+    margin: auto;
+}
+#irina{
+    display: block;
+    margin: auto;
+}
+#quadro{
+    background-color: #C5EBD6;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+#faixa{
+    background-color: #2FA866;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+#faixa > p{
+    margin: 0;
+}
+#doces{
+    display: flex;
+    flex-direction: row;
+}
+#box-left{
+    padding-right: 150px;
+}
+

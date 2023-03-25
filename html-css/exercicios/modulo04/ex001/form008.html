@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fomrulário 008</title>
+</head>
+<body>
+    <h1>Preencha o formulário</h1>
+
+    <form action="form.php" method="POST">
+        <fieldset>
+            <legend>formulário</legend>
+            <p>
+                <label for="idAno">Ano de nascimento</label>
+                <input type="number" name="ano" id="idAno" min="1900" max="2023" value="2000" oninput="idade()">
+            </p>
+            <p>
+                <label for="outIda">Idade: </label>
+                <output id="outIda">0</output>
+            </p>
+        </fieldset><br>
+    </form>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+
+    <script>
+        function idade(){
+            let atual = new Date().getFullYear()
+            outIda.innerHTML = Number(atual) - Number(idAno.value)
+        }
+    </script>
+</body>
+</html>

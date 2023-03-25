@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes e Pseudo-elementos</title>
+    <style>
+        li{
+            color: rgb(57, 57, 255);
+        }
+        li a:hover{
+            color: rgb(117, 117, 253);
+        }
+        span{
+            color: rgb(253, 117, 117);
+        }
+        span::after{
+            content: '*';
+        }
+        li > a::after{
+            content: '[link]';
+            color: lightgray;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contatos</h1>
+    <ul>
+        <li><a href="https://cursoemvideo.github.io" target="_blank" rel="external">perfil do github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal do <span>youtube</span></a></li>
+        <li><a href="https://cursoemvideo.com" target="_blank" rel="external">Site do cursoemvideo</a></li>
+    </ul>
+</body>
+</html>

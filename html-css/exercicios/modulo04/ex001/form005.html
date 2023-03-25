@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 005</title>
+</head>
+<body>
+    <h1>Preencha o formulário</h1>
+    <form action="form.php" method="post">
+        <fieldset>
+            <legend>Preencha</legend>
+            <p>
+                <label for="idEst">Estados: </label>
+                <select name="est" id="idEst">
+                    <option value="" selected>--- escolha ---</option>
+                    <optgroup label="Região Norte">
+                        <option value="AM">Amazonas</option>
+                        <option value="RR">Roraima</option>
+                        <option value="AP">Amapá</option>
+                        <option value="PA">Pará</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="AC">Acre</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PI">Piauí</option>
+                        <option value="CE">Ceará</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bahia</option>
+                    </optgroup>
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="GO">Goiás</option>
+                    </optgroup>
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa catarina</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="idPro">Profissão: </label>
+                <input type="text" name="pro" id="idPro" list="lstPro">
+                <datalist id="lstPro">
+                    <option>Adminstração</option>
+                    <option>Contabilidade</option>
+                    <option>Desenvolvimento</option>
+                    <option>Serviços</option>
+                    <option>Programação</option>
+                    <option>Pisicológia</option>
+                    <option>Medicina</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="idMsg">Mensagem: </label><br>
+                <textarea name="msg" id="idMsg" cols="40" rows="15"></textarea>
+            </p>
+        </fieldset><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

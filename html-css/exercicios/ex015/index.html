@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../exercicios/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Aplicação de todos os conteúdos</title>
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>Revisão geral de <strong>tags</strong> (Abreviação) &rightarrow; <abbr title="HyperText MarkUp Language 5">HTML5</abbr></h1>
+            <h2>Autor: <em>Marcus Coelho</em></h2>
+            <h3><mark>Última atualização em <ins>13/02/2023</ins></mark></h3>
+        </hgroup>
+        <section>
+            <article>
+                <h2>Lista ordenada</h2>
+                <ol>
+                    <li>Lista ordenada</li>
+                    <li>Lista ordenada</li>
+                    <ol>
+                        <li>Sub lista</li>
+                        <li>Sub lista</li>
+                    </ol>
+                    <li>Lista ordenada</li>
+                    <li>Lista ordenada</li>
+                    <li>Lista ordenada</li>
+                </ol>
+                <h2>Lista não ordenada</h2>
+                <ul>
+                    <li>Lista não ordenada</li>
+                    <li>Lista não ordenada</li>
+                    <ul>
+                        <li>Sub lista</li>
+                        <li>Sub lista</li>
+                    </ul>
+                    <li>Lista não ordenada</li>
+                    <li>Lista não ordenada</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Parágrafo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae ullam similique reiciendis omnis quod quis, magnam maxime delectus magni sequi earum officia qui cupiditate unde non cumque consectetur doloremque tempore!</p>
+                <blockquote>&#x1F31D; Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit natus optio unde eaque veritatis culpa excepturi iste consequatur dolorum nostrum. Dolore molestiae deleniti quasi itaque culpa aperiam porro. Velit, ipsum.</blockquote>
+                <h2>Link <sub>ancora</sub></h2>
+                <a href="https://google.com" target="_blank" rel="external">Ir para o Google</a><br>
+                <a href="pagina2.html" target="_self" rel="next">Ir para a página 02</a>
+            </article>
+        </section>
+        <aside>
+            <h2>Imagem flexível</h2>
+            <picture>
+                <source media="(min-width: 1050px)" srcset="img/win.png" type="image/png">
+                <source media="(min-width: 700px)" srcset="img/win-650.png" type="image/png">
+                <img src="img/win-300.png" alt="imagem flexível">
+            </picture>
+            <h2>Video externo</h2>
+            <iframe width="424" height="238" src="https://www.youtube.com/embed/Ldl_CvMGmEA" title="🥇 TOP 10 Cursos Grátis para 2022 ✋🤚" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+            <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">Ir para o canal do <sup>curso em vídeo</sup></a>
+            <h2>Vídeo interno</h2>
+            <video width="560" height="315" controls poster="img/win-300.png">
+                <source src="midia/meu-video.mp4" type="video/mp4">
+                <source src="midia/Meu-Video.webm" type="video/webm">
+                <p>Seu navegador não suporta vídeos</p>
+            </video><br>
+            <h2><del>Audio interno</del></h2>
+            <audio src="" controls></audio>
+            <ul>
+                <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar livro em pdf</a></li>
+                <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Baixar livro em zip</a></li>
+            </ul>
+        </aside>
+    </header>
+</body>
+</html>

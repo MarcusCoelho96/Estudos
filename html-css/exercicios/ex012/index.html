@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens flexíveis</title>
+</head>
+<body>
+    <picture>
+        <source media="(min-width: 1050px)" srcset="img/win.png" type="image/png">
+        <source media="(min-width: 700px)" srcset="img/win-650.png" type="image/png">
+        <img src="img/win-300.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamops aprender a reproduzir áudios em HTML5</p>
+    <audio src="caminho da midia + . + tipo" controls></audio>
+    <!--Tipos: MP3, WAV, OGG-->
+    <audio preload="metadata" controls loop> 
+        <source src="caminho da midia + . + mp3" type="audio/mpeg">
+        <source src="caminho da midia + . + ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegui reproduzir áudio. <a href="caminho da midia + . + tipo">Clique aqui para baixar o arquivo</a></p>
+    </audio>
+    <h1>Reproduzindo vídeos</h1>
+    <video width="560" height="315" controls poster="img/photo.jpg"> <!--m4v é o tipo mais indicado-->
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/Meu-Video.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de videos.</p>
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/718558198?h=4bb86245d6&color=ffffff&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

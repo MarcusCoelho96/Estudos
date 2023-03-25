@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 003</title>
+</head>
+<body>
+    <h1>Preencha o formulário</h1>
+    <form action="form.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="idMas" value="M" checked><label for="idMas">Masculino</label><br>
+            <input type="radio" name="sexo" id="idFem" value="F"><label for="idFem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favorítos</legend>
+            <input type="checkbox" name="bas" id="idBas" checked><label for="idBas">Basquete</label><br>
+            <input type="checkbox" name="fut" id="idFut" checked><label for="idFut">Futebol</label><br>
+            <input type="checkbox" name="nat" id="idNat"><label for="idNat">Natação</label><br>
+            <input type="checkbox" name="ten" id="idTen"><label for="idTen">Tênis</label>
+        </fieldset><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

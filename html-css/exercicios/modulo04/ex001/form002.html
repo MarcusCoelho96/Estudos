@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Form002</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Formulário de média</legend>
+        <form action="form.php" method="post">
+            <p>
+                <label for="idNome">Nome: </label>
+                <input type="text" name="nome" id="idNome" placeholder="Nome completo" maxlength="45" value="João Cardoso da Silva" required>
+            </p>
+            <p>
+                <label for="idMedia">Média: </label>
+                <input type="number" name="media" id="idMedia" placeholder="0 à 10" step=".1" min="0" max="10" value="9.9" required>
+            </p>
+            <p>
+                <label for="idPeriodo">Período Letívo: </label>
+                <input type="month" name="periodo" id="idPeriodo" value="2023-03" required>
+            </p>
+            <p>
+                <label for="idDia">Dia da prova</label>
+                <input type="date" name="dia" id="idDia" value="2023-03-22" required>
+            </p>
+            <p>
+                <label for="idHora">Hora da prova: </label>
+                <input type="time" name="hora" id="idHora" value="16:31" required>
+            </p>
+            <input id="botao" type="submit" value="Enviar">
+            <input id="botao" type="reset" value="Limpar">
+        </form>
+    </fieldset>
+</body>
+</html>

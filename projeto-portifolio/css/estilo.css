@@ -1,0 +1,126 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: aliceblue;
+    background-image: url(../img/futuro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    line-height: 1.5;
+    height: 100vh;
+}
+
+header nav{
+    text-align: center;
+    background-color: rgb(16, 63, 110);
+    padding: 15px;
+    box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.459);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+nav > a{
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    color: white;
+}
+nav > a:hover{
+    font-weight: bold;
+}
+main{
+    padding-top: 10vh;
+    background-color: rgba(148, 140, 140, 0.363);
+    margin-top: 5px;
+    margin: auto;
+    max-width: 800px;
+    min-width: auto;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.438);
+    height: 1290px;
+    border-radius: 0 0 10px 10px;
+}
+
+section{
+    padding: 5px;
+    margin: auto;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    font-weight: bold;
+}
+picture{
+    display: block;
+    margin: auto;
+    border-radius: 50% 50%;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    width: 250px;
+    height: 250px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.527);
+    background-color: rgb(255, 255, 255);
+    background-image: url(../img/img.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.527);
+}
+picture:hover{
+    display: block;
+    margin: auto;
+    border-radius: 50% 50%;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    width: 250px;
+    height: 250px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.527);
+    background-color: rgb(255, 255, 255);
+    background-image: url(../img/img02.png);
+    background-position: center;
+    background-size: 102%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.527);
+}
+h1, h2, h3{
+    font-variant: small-caps;
+}
+
+article, aside{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.301);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 15px 0px 15px
+}
+article#curiosidade p{
+    text-indent: 30px;
+    text-align: justify;
+}
+article ul{
+    list-style-position: inside ;
+}
+footer{
+    text-align: center;
+    font-size: 1em;
+    margin: auto;
+    max-width: 800px;
+    min-width: auto;
+    bottom: 0;
+    padding: 15px;
+}
+footer p{
+    color: white;
+    font-weight: bold;
+}
+footer a{
+    font-variant: small-caps;
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    font-weight: bold;
+}

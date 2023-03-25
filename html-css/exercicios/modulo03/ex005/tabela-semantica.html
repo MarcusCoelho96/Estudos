@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Semântica</title>
+    <style>
+        *{
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            font-size: 5vw;
+        }
+        table{
+            border-collapse: collapse;
+            width: 50vw;
+            position: relative;
+        }
+        caption{
+            font-size: 2.5vw;
+            font-weight: bold;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            background-color: rgb(255, 0, 0);
+            color: aliceblue;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        td.num{
+            text-align: right;
+        }
+        td.pais{
+            text-align: left;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+        thead, tfoot{
+            background-color: rgb(49, 47, 47);
+            color:white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(49, 47, 47);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela semântica</h1>
+            <table>
+                <caption>Ranking de maior número de habitantes</caption>
+                <thead>
+                    <tr>
+                        <th scope="row">Posição</th>
+                        <th scope="row">País (ou território dependente)</th>
+                        <th scope="row">Estimativa da ONU</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="pstion">1</td>
+                        <td class="pais">China</td>
+                        <td class="num">1 411 780 000</td>
+                    </tr>
+                    <tr>
+                        <td class="pstion">2</td>
+                        <td class="pais">Índia</td>
+                        <td class="num">1 326 155 000</td>
+                    </tr>
+                    <tr>
+                        <td class="pstion">3</td>
+                        <td class="pais">Estados Unidos</td>
+                        <td class="num">331 449 281</td>
+                    </tr>
+                    <tr>
+                        <td class="pstion">4</td>
+                        <td class="pais">Indonésia</td>
+                        <td class="num">273 523 615</td>
+                    </tr>
+                    <tr>
+                        <td class="pstion"><del>1</del></td>
+                        <td class="pais"><del>China</del></td>
+                        <td class="num"><del>1 411 780 000</del></td>
+                    </tr>
+                    <tr>
+                        <td class="pstion"><del>2</del></td>
+                        <td class="pais"><del>Índia</del></td>
+                        <td class="num"><del>1 326 155 000</del></td>
+                    </tr>
+                    <tr>
+                        <td class="pstion"><del>3</del></td>
+                        <td class="pais"><del>Estados Unidos</del></td>
+                        <td class="num"><del>331 449 281</del></td>
+                    </tr>
+                    <tr>
+                        <td class="pstion"><del>4</del></td>
+                        <td class="pais"><del>Indonésia</del></td>
+                        <td class="num"><del>273 523 615</del></td>
+                    </tr>
+                    <tr>
+                        <td class="pstion"><del>1</del></td>
+                        <td class="pais"><del>China</del></td>
+                        <td class="num"><del>1 411 780 000</del></td>
+                    </tr>
+                    <tr>
+                        <td class="pstion"><del>2</del></td>
+                        <td class="pais"><del>Índia</del></td>
+                        <td class="num"><del>1 326 155 000</del></td>
+                    </tr>
+                    <tr>
+                        <td class="pstion"><del>3</del></td>
+                        <td class="pais"><del>Estados Unidos</del></td>
+                        <td class="num"><del>331 449 281</del></td>
+                    </tr>
+                    <tr>
+                        <td class="pstion"><del>4</del></td>
+                        <td class="pais"><del>Indonésia</del></td>
+                        <td class="num"><del>273 523 615</del></td>
+                    </tr>
+                    <tr>
+                        <td class="pstion"><del>1</del></td>
+                        <td class="pais"><del>China</del></td>
+                        <td class="num"><del>1 411 780 000</del></td>
+                    </tr>
+                    <tr>
+                        <td class="pstion"><del>2</del></td>
+                        <td class="pais"><del>Índia</del></td>
+                        <td class="num"><del>1 326 155 000</del></td>
+                    </tr>
+                    <tr>
+                        <td class="pstion"><del>3</del></td>
+                        <td class="pais"><del>Estados Unidos</del></td>
+                        <td class="num"><del>331 449 281</del></td>
+                    </tr>
+                    <tr>
+                        <td class="pstion"><del>4</del></td>
+                        <td class="pais"><del>Indonésia</del></td>
+                        <td class="num"><del>273 523 615</del></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="col">Total</th>
+                        <td></td>
+                        <td class="num"><strong>3.372.907.896</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+            <h1>titulo</h1>
+            <h2>sub titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa est repellat recusandae magnam! Officia dolorem, reiciendis a odit ipsum alias hic ad, minima fugiat reprehenderit dignissimos deserunt neque beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum placeat, voluptates suscipit nulla id dicta? Placeat commodi, eum adipisci, quisquam iusto dolorem laborum quo ad doloremque mollitia libero, eligendi suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique reiciendis illo voluptatem dolorem consectetur, minima aliquam deleniti harum at, vitae quibusdam accusamus velit sit veniam saepe dolorum aut laborum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, aliquid eius explicabo, consequatur dignissimos facilis autem perspiciatis dicta numquam rerum ut sequi suscipit quam possimus, nisi asperiores quis neque. Magnam.</p>
+            <h2>sub titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa est repellat recusandae magnam! Officia dolorem, reiciendis a odit ipsum alias hic ad, minima fugiat reprehenderit dignissimos deserunt neque beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum placeat, voluptates suscipit nulla id dicta? Placeat commodi, eum adipisci, quisquam iusto dolorem laborum quo ad doloremque mollitia libero, eligendi suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique reiciendis illo voluptatem dolorem consectetur, minima aliquam deleniti harum at, vitae quibusdam accusamus velit sit veniam saepe dolorum aut laborum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, aliquid eius explicabo, consequatur dignissimos facilis autem perspiciatis dicta numquam rerum ut sequi suscipit quam possimus, nisi asperiores quis neque. Magnam.</p>
+            <h2>sub titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa est repellat recusandae magnam! Officia dolorem, reiciendis a odit ipsum alias hic ad, minima fugiat reprehenderit dignissimos deserunt neque beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum placeat, voluptates suscipit nulla id dicta? Placeat commodi, eum adipisci, quisquam iusto dolorem laborum quo ad doloremque mollitia libero, eligendi suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique reiciendis illo voluptatem dolorem consectetur, minima aliquam deleniti harum at, vitae quibusdam accusamus velit sit veniam saepe dolorum aut laborum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, aliquid eius explicabo, consequatur dignissimos facilis autem perspiciatis dicta numquam rerum ut sequi suscipit quam possimus, nisi asperiores quis neque. Magnam.</p>
+            <h2>sub titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa est repellat recusandae magnam! Officia dolorem, reiciendis a odit ipsum alias hic ad, minima fugiat reprehenderit dignissimos deserunt neque beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum placeat, voluptates suscipit nulla id dicta? Placeat commodi, eum adipisci, quisquam iusto dolorem laborum quo ad doloremque mollitia libero, eligendi suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique reiciendis illo voluptatem dolorem consectetur, minima aliquam deleniti harum at, vitae quibusdam accusamus velit sit veniam saepe dolorum aut laborum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, aliquid eius explicabo, consequatur dignissimos facilis autem perspiciatis dicta numquam rerum ut sequi suscipit quam possimus, nisi asperiores quis neque. Magnam.</p>
+            <h2>sub titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa est repellat recusandae magnam! Officia dolorem, reiciendis a odit ipsum alias hic ad, minima fugiat reprehenderit dignissimos deserunt neque beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum placeat, voluptates suscipit nulla id dicta? Placeat commodi, eum adipisci, quisquam iusto dolorem laborum quo ad doloremque mollitia libero, eligendi suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique reiciendis illo voluptatem dolorem consectetur, minima aliquam deleniti harum at, vitae quibusdam accusamus velit sit veniam saepe dolorum aut laborum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, aliquid eius explicabo, consequatur dignissimos facilis autem perspiciatis dicta numquam rerum ut sequi suscipit quam possimus, nisi asperiores quis neque. Magnam.</p>
+            <h2>sub titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa est repellat recusandae magnam! Officia dolorem, reiciendis a odit ipsum alias hic ad, minima fugiat reprehenderit dignissimos deserunt neque beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum placeat, voluptates suscipit nulla id dicta? Placeat commodi, eum adipisci, quisquam iusto dolorem laborum quo ad doloremque mollitia libero, eligendi suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique reiciendis illo voluptatem dolorem consectetur, minima aliquam deleniti harum at, vitae quibusdam accusamus velit sit veniam saepe dolorum aut laborum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, aliquid eius explicabo, consequatur dignissimos facilis autem perspiciatis dicta numquam rerum ut sequi suscipit quam possimus, nisi asperiores quis neque. Magnam.</p>
+            <h2>sub titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa est repellat recusandae magnam! Officia dolorem, reiciendis a odit ipsum alias hic ad, minima fugiat reprehenderit dignissimos deserunt neque beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum placeat, voluptates suscipit nulla id dicta? Placeat commodi, eum adipisci, quisquam iusto dolorem laborum quo ad doloremque mollitia libero, eligendi suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique reiciendis illo voluptatem dolorem consectetur, minima aliquam deleniti harum at, vitae quibusdam accusamus velit sit veniam saepe dolorum aut laborum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, aliquid eius explicabo, consequatur dignissimos facilis autem perspiciatis dicta numquam rerum ut sequi suscipit quam possimus, nisi asperiores quis neque. Magnam.</p>
+            <h2>sub titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa est repellat recusandae magnam! Officia dolorem, reiciendis a odit ipsum alias hic ad, minima fugiat reprehenderit dignissimos deserunt neque beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum placeat, voluptates suscipit nulla id dicta? Placeat commodi, eum adipisci, quisquam iusto dolorem laborum quo ad doloremque mollitia libero, eligendi suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique reiciendis illo voluptatem dolorem consectetur, minima aliquam deleniti harum at, vitae quibusdam accusamus velit sit veniam saepe dolorum aut laborum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, aliquid eius explicabo, consequatur dignissimos facilis autem perspiciatis dicta numquam rerum ut sequi suscipit quam possimus, nisi asperiores quis neque. Magnam.</p>
+            <h2>sub titulo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident culpa est repellat recusandae magnam! Officia dolorem, reiciendis a odit ipsum alias hic ad, minima fugiat reprehenderit dignissimos deserunt neque beatae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum placeat, voluptates suscipit nulla id dicta? Placeat commodi, eum adipisci, quisquam iusto dolorem laborum quo ad doloremque mollitia libero, eligendi suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil similique reiciendis illo voluptatem dolorem consectetur, minima aliquam deleniti harum at, vitae quibusdam accusamus velit sit veniam saepe dolorum aut laborum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, aliquid eius explicabo, consequatur dignissimos facilis autem perspiciatis dicta numquam rerum ut sequi suscipit quam possimus, nisi asperiores quis neque. Magnam.</p>
+</body>
+</html>

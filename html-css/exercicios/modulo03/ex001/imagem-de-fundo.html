@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem de fundo</title>
+    <style>
+        body{
+            background-color: rgb(190, 38, 170);
+            width: 920px;
+        }
+        div.quadrado{
+            display: inline-block;
+            background-color: grey;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: auto;
+        }
+        div#a{
+            background-color: goldenrod;
+        }
+        div#c{
+            background-image: linear-gradient(to bottom, rgb(1, 75, 1), rgb(54, 158, 54));
+        }
+        div#b{
+            background-color: aliceblue;
+            background-image: url(img/web.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: local;
+            /*"shorthand" = background: color url(image) position repeat attachment */
+        }
+        div#fora{
+            height: 500px;
+            background-color: #BD7DF5;
+            position: relative;
+        }
+        div#dentro{
+            height: 200px;
+            width: 300px;
+            background-color: #F5FF40;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+</head>
+<body>
+
+    <article>
+
+            <div class="quadrado" id="a"></div>
+            <div class="quadrado" id="b"></div>
+            <div class="quadrado" id="c"></div>
+
+        <div id="fora">
+            <div id="dentro"></div>
+        </div>
+
+    </article>
+
+</body>
+</html>

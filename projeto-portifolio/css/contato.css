@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+article a p#gmail::after{
+    content: url(../img/gmail.png);
+}
+article a p#wpp::after{
+    content: url(../img/wpp.png);
+}
+article a p#github::after{
+    content: url(../img/github.png);
+}
+article a p#linkedin::after{
+    content: url(../img/linkedin.png);
+}
+h1#tContato{
+    text-align: center;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.5);
+    font-size: 2.5em;
+}
+article.aContato{
+    text-align: center;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+article.aContato a{
+    text-decoration: none;
+    color: white;
+}
+article.aContato p{
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+    border-radius: 1px;
+    margin: 0.5px;
+}
+article.aContato a:hover, article.aContato p:hover{
+    background-color: rgba(25, 150, 102, 0.411);
+    font-weight: bold;
+}
+main#contato{
+    max-height: 88.4vh;
+}

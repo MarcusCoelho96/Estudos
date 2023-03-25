@@ -1,0 +1,81 @@
+@charset "UTF-8";
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: bisque;
+}
+main{
+    width: 600px;
+    margin: auto;
+}
+header{
+    background-color: rgb(0, 66, 4);
+    height: 90px;
+    width: 600px;
+    margin: auto;
+    color: white;
+}
+header h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Times, serif, 'Arial Narrow', Arial, sans-serif;
+}
+header nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 2px;
+    color: black;
+}
+header nav ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+header nav{
+    background-color: rgb(210, 224, 11);
+    width: 97%;
+    margin: auto;
+    box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+}
+section{
+    padding: 10px;
+    background-color: rgb(78, 38, 11);
+}
+section article{
+    background-color: rgb(139, 127, 111);
+    padding: 1px 3px 1px 3px;
+    box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+}
+section article p{
+    text-indent: 20px;
+    text-align: justify;
+}
+#bra{
+    color: rgb(5, 94, 12);
+}
+#sil{
+    color: rgb(210, 224, 11);
+}
+aside{
+    padding: 10px;
+    background-color: rgb(78, 38, 11);
+}
+aside div{
+    background-color: rgb(139, 127, 111);
+    padding: 1px 3px 1px 3px;
+    box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.438);
+}
+footer p{
+    margin: 0;
+}
+
+

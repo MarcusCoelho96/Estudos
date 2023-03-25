@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/funcoes.js"></script>
+
+</head>
+<body>
+    <div id="interface">
+    <header id="cabecalho">
+        <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+        <img id="icone" src="_imagens/multi.png" alt="Multimidia"> 
+            <nav id="menu">
+                <ul>
+                    <a href="index.html"><li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multi.png')">Home</li></a>
+                    <a href="specs.html"><li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multi.png')">Especificações</li></a>
+                    <a href="foto.html"><li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multi.png')">Fotos</li></a>
+                    <a href="multimidia.html"><li>Multimidia</li></a>
+                    <a href="fale-conosco.html"><li onmouseover="mudaFoto('_imagens/fale_conosco.png')" onmouseout="mudaFoto('_imagens/multi.png')">Fale conosco</li></a>
+                </ul>
+            </nav>  
+    </header>
+    <section id="corpo-specs">
+        <article id="noticia-principal">
+            <hgroup>
+                <h3>Glass > Multimidia</h3>
+                <h1>Sons e Vídeos</h1>
+                <h2>por Gustavo Guanabara</h2>
+                <h3>Atualizado em 01/Maio/2013</h3>
+            </hgroup>
+        
+            <div id="tv-radio">
+               <!--<video id="filme" src="" controls poster="uma imagem para inciar o video">
+                    <source src="" type="video/mp4">
+                    Desculpe, mas não foi possivel carregar o video
+                </video>--> 
+            
+            <iframe id="filme" width="560" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </article>
+    </section>
+
+
+    <footer id="rodape">
+        <p>Copyright 2013 - by Gustavo Guanabara<br/>
+        <a href="http://facebook.com/cursoemvideo" target="_blank">Facebook </a>
+        <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
+    </footer>
+
+</div>
+</body>
+</html>
