@@ -1,1 +1,14 @@
 @charset "UTF-8";
+
+menu nav h1{
+    display: none;
+}
+menu nav ul li{
+    display: inline-block;
+}
+footer > div{
+    margin-bottom: 10px;
+}
+footer > div > p{
+    text-align: center;
+}
