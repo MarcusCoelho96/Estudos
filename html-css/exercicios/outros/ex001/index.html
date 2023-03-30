@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="css/estilo.css">    
+    <title>Novo usuário</title>
+</head>
+<body>
+    <div class="container">
+
+        <section class="header">
+            <h2>Nova conta</h2>
+        </section>
+
+        <form id="form" class="form" action="">
+
+            <div class="form-content">
+                <label for="username">Nome do usuário: </label>
+                <input type="text" name="username" id="username" placeholder="Digite o seu nome">
+                <a>Aqui vai a mensagem de erro...</a>
+            </div>
+
+            <div class="form-content">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Digite o seu email">
+                <a>Aqui vai a mensagem de erro...</a>
+            </div>
+
+            <div class="form-content">
+                <label for="password">Senha: </label>
+                <input type="password" name="password" id="password" placeholder="Digite uma senha">
+                <a>Aqui vai a mensagem de erro...</a>
+            </div>
+
+            <div class="form-content">
+                <label for="password-confirmation">Confirmação de senha: </label>
+                <input type="password" name="password-confirmation" id="password-confirmation" placeholder="Digite a senha novamente">
+                <a>Aqui vai a mensagem de erro.</a>
+            </div>
+
+            <button type="submit" onclick="checkInputUsername()">Cadastrar</button>
+
+        </form>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
