@@ -43,6 +43,10 @@ function checkForm(){
 
     if(isValid){
         alert("Cadastrado com sucesso!");
+        username.value = "";
+        email.value = "";
+        password.value = "";
+        passwordConfirmation.value = "";
     }
 }
 /*---------------------------------------------------- */
