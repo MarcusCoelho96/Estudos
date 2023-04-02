@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+nav#itens{
+    display: block;
+}
+main.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+}
+menu.esquerda{
+    width: 10vw;
+}
+article.meio{
+    width: 70vw;
+}
+aside.direita{
+    width: 20vw;
+}
+h1, h2, h3, h4{
+    text-align: center;
+}
+.paragrafo{
+    max-width: 600px;
+    margin: auto;
+}
+.imagem{
+    max-width: 600px;
+}
+.fcontainer{
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+}
+#pt1{
+    width: 30%;
+    padding: 15px;
+}
+#pt2{
+    width: 40%;
+    padding: 15px;
+}
+#pt3{
+    width: 30%;
+    padding: 15px;
+}
