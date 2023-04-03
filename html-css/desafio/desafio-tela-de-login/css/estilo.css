@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/*mobile first*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body, main{
+    height: 100vh;
+    width: 100vw;
+    background-color: purple;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 600px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.500);
+    transition: width .3s, height .3s;
+}
+div#imagem{
+    text-align: center;
+    height: 200px;
+    background-image: url(../img/pexel.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#imagem a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+div#imagem p{
+    padding-top: 60px;
+}
+div#formulario{
+padding: 15px;
+}
+
+/*media query para tablet*/
+@media screen and (min-width: 769px) and (max-width: 992px){
+    section{
+        display: flex;
+        width: 80vw;
+    }
+    div#imagem{
+        width: 35vw;
+        height: 100%;
+    }
+    div#formulario{
+        width: 65vw;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    section{
+        display: flex;
+        width: 80vw;
+    }
+    div#imagem{
+        width: 45vw;
+        height: 100%;
+    }
+    div#formulario{
+        width: 55vw;
+        height: 100%;
+    }
+}
+
+@media  screen and (min-width: 1201px) {
+    section{
+        display: flex;
+        width: 80vw;
+    }
+    div#imagem{
+        width: 50vw;
+        height: 100%;
+    }
+    div#formulario{
+        width: 50vw;
+        height: 100%;
+    }
+    div#imagem p{
+        padding-top: 40px;
+    }
+}
