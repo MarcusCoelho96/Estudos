@@ -1,0 +1,5 @@
+@charset "UTF-8";
+
+header menu#itens > ul > a > li{
+    display: inline-block;
+}
