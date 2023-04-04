@@ -34,11 +34,59 @@ div#imagem a{
     color: white;
     text-shadow: 0 0 2px black;
 }
-div#imagem p{
-    padding-top: 60px;
-}
 div#formulario{
 padding: 15px;
+}
+div#formulario h1{
+    padding: 10px;
+}
+div#formulario p{
+    display: block;
+}
+div.campo{
+    padding: 0 0 7.5px 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+div.campo input{
+    width: 95%;
+    padding: 5px;
+    border-top: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+}
+form input#btnEntrar{
+    margin: 7px 0;
+    display: block;
+    padding: 8px;
+    width: 100%;
+    background-color: rgba(128, 0, 128, 0.623);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+form input#btnEntrar:hover{
+    background-color: rgb(128, 0, 128);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.493);
+    cursor: pointer;
+}
+
+form a{
+    text-align: center;
+    display: inline-block;
+    padding: 8px;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 5px;
+}
+form a:hover{
+    text-decoration: underline;
+    color: rgb(2, 2, 182);
+}
+
+i#iconEmail{
+    font-size: 1em;
 }
 
 /*media query para tablet*/
@@ -69,33 +117,39 @@ padding: 15px;
         width: 80vw;
     }
     div#imagem{
-        width: 45vw;
+        width: 45%;
         height: 100%;
     }
     div#formulario{
-        width: 55vw;
+        width: 55%;
         height: 100%;
     }
+    div.campo{
+        background-color: white;
+    }
+    div.campo input{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.473);
+    }
+    div.campo label{
+        display: none;
+    }
+
 }
 
-@media  screen and (min-width: 1201px) {
+@media screen and (min-width: 1201px) {
     body, main{
         background-image: linear-gradient(360deg, purple, rgb(0, 87, 128));
     }
     section{
+        display: flex;
         width: 80vw;
     }
     div#imagem{
-        display: block;
-        float: right;
-        width: 60%;
+        width: 50%;
         height: 100%;
     }
     div#formulario{
-        width: 40%;
+        width: 50%;
         height: 100%;
-    }
-    div#imagem p{
-        padding-top: 40px;
     }
 }
