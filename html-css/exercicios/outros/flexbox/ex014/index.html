@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        @charset "UTF-8";
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body.container{
+
+            display: flex;
+            flex-direction: column;
+
+            min-height: 100vh;
+            background-color: blanchedalmond;
+        }
+        header.header{
+            border: 1px solid black;
+            box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+
+            padding: 15px;
+            text-align: center;
+        }
+        main.main{
+            border: 1px solid black;
+            box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+
+            text-align: center;
+
+            display: flex;
+            flex-direction: row;
+
+            flex: 1;
+        }
+        aside.aside{
+            border: 1px solid black;
+            box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+
+            padding: 15px;
+            text-align: center;
+
+            flex-basis: 100px;
+        }
+        section.content{
+            border: 1px solid black;
+            box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+
+            padding: 15px;
+            text-align: center;
+
+            flex: 1;
+        }
+        div.ads{
+            border: 1px solid black;
+            box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+
+            padding: 15px;
+            text-align: center;
+
+            flex-basis: 100px;
+        }
+        footer{
+            border: 1px solid black;
+            box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+
+            padding: 15px;
+            text-align: center;
+        }
+
+        @media  screen and (max-width: 900px) {
+            main.main{
+                flex-direction: column;
+            }
+
+            section.content{
+                order: -1;
+            }
+        }
+
+    </style>
+</head>
+<body class="container">
+    <header class="header">
+        header
+    </header>
+    <main class="main">
+        <aside class="aside">
+            aside
+        </aside>
+        <section class="content">
+            content
+        </section>
+        <div class="ads">
+            ads
+        </div>
+    </main>
+    <footer class="footer">
+        footer
+    </footer>
+</body>
+</html>

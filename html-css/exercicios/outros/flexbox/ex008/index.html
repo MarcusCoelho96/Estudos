@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        @charset "UTF-8";
+
+        main.container{
+            background-color: rgba(127, 255, 212, 0.527);
+            border: 1px solid rgba(0, 0, 0, 0.466);
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        header, section, aside, footer{
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid white;
+            background-color: blanchedalmond;
+            font-size: 1.2em;
+        }
+        aside{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <header>
+            header
+        </header>
+        <section>
+            contain
+        </section>
+        <aside>
+            aside
+        </aside>
+        <footer>
+            footer
+        </footer>
+    </main>
+</body>
+</html>
