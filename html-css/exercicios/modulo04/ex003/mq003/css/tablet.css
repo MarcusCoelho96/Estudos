@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+i#burguer{
+    display: none;
+}
 .imagem{
     max-width: 500px;
 }
