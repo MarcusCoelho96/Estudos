@@ -166,6 +166,11 @@ i#iconEmail{
         min-width: 35%;
         height: 100%;
     }
+    div#formulario h1{
+        display: block;
+        width: 100%;
+        text-indent: 30px;
+    }
     div#formulario p{
         padding: 15px;
     }
