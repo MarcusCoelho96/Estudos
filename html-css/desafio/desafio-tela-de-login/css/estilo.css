@@ -78,7 +78,7 @@ form input#btnEntrar:hover{
 
 form a{
     text-align: center;
-    display: inline-block;
+    display: block;
     padding: 8px;
     width: 100%;
     text-decoration: none;
@@ -156,14 +156,20 @@ i#iconEmail{
         height: 100%;
     }
     div#formulario{
-        width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        transform: translateY(-20px);
+
+        min-width: 35%;
         height: 100%;
-        transform: translateY(50px);
     }
     div#formulario p{
         padding: 15px;
     }
     div.campo, input#btnEntrar{
-        max-width: 460px;
+        min-width: 330px;
     }
 }
