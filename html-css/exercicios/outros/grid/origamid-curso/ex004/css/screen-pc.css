@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 body.grid-container{
-    display: grid;
     grid-template-columns: minmax(100px, 200px) minmax(300px, auto) minmax(100px, 300px);
     grid-template-rows: 200px minmax(500px, auto) 100px ;
     grid-template-areas: 
