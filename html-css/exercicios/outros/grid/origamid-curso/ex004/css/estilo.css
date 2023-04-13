@@ -11,7 +11,7 @@ body{
 body.grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px minmax(200px, auto) minmax(150px, auto) 100px;
+    grid-template-rows: repeat(2, 100px) minmax(200px, auto) minmax(150px, auto) 100px;
     grid-template-areas: 
         "header"
         "menu"
