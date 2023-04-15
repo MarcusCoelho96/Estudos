@@ -1,12 +1,20 @@
 @charset "UTF-8";
 
 body.grid-container{
-    grid-template-columns: minmax(100px, 200px) minmax(300px, auto) minmax(100px, 300px);
-    grid-template-rows: 200px minmax(500px, auto) 100px ;
-    grid-template-areas: 
-        "header header header"
-        "menu section aside"
-        "menu section aside"
-        "footer footer footer"
+                                                    /*
+                                                    grid-template-columns: minmax(100px, 200px) minmax(300px, auto) minmax(100px, 300px);
+                                                    grid-template-rows: 200px minmax(500px, auto) 100px;
+                                                    grid-template-areas: 
+                                                        "header header header"
+                                                        "menu section aside"
+                                                        "footer footer footer"
+                                                    ;
+                                                    */
+    /* " shorthand - template "  --> prefiro o código comentado*/
+    grid-template:
+        "header header header" 200px
+        "menu section aside" minmax(500px, auto)
+        "footer footer footer" 100px
+        / minmax(100px, 200px) minmax(300px, auto) minmax(100px, 300px)
     ;
 }
