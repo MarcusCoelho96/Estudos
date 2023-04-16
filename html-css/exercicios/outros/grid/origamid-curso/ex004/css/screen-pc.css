@@ -10,8 +10,8 @@ body.grid-container{
                                                         "footer footer footer"
                                                     ;
                                                     */
-    /* " shorthand - template "  --> prefiro o código comentado*/
-    grid-template:
+    /* " shorthand"  --> prefiro o código comentado*/
+    grid:
         "header header header" 200px
         "menu section aside" minmax(500px, auto)
         "footer footer footer" 100px

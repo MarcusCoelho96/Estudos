@@ -22,8 +22,8 @@ body.grid-container{
                                             "footer"
                                         ;*/
 
-    /* " shorthand - template " --> prefiro o código comentado*/
-    grid-template: 
+    /* " shorthand " --> prefiro o código comentado*/
+    grid: 
     "header" 100px
     "menu" 100px
     "section" minmax(200px, auto)
