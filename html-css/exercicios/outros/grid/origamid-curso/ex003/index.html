@@ -13,8 +13,9 @@
             height: 100vh;
 
             display: grid;
-            grid-template-columns: 100px auto 80px;
-            grid-template-rows: 100px minmax(500px, auto) 100px;
+            /*grid-template-columns: 100px auto 80px;
+            grid-template-rows: 100px minmax(500px, auto) 100px;*/
+            grid: 100px auto 80px / 100px minmax(500px, auto) 100px; /*shorthand do grid-template ( rowa e columns )*/
 
         }
         .grid-item{
