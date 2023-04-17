@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>last Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(255, 251, 30);
+
+            height: 100vh;
+            width: 100vw;
+        }
+        main.grid-container{
+            height: 100vh;
+            width: 100vw;
+
+            display: grid;
+            grid: 
+                "header header header" 100px
+                "menu contain ads"  minmax(100px, auto)
+                "menu contain aside" minmax(300px, auto)
+                "footer footer footer" 100px
+                / 100px minmax(300px, auto) 200px
+            ;
+        }
+        div.grid-item{
+            background-color: rgb(56, 255, 30);
+            border: 1px solid black;
+            padding: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div.grid-item:nth-child(1){
+            grid-area: header;
+            justify-self: start;
+            align-self: start;
+        }
+        div.grid-item:nth-child(2){
+            grid-area: menu;
+            justify-self: start;
+            align-self: end;
+        }
+        div.grid-item:nth-child(3){
+            grid-area: contain;
+            justify-self: center;
+            align-self: center;
+        }
+        div.grid-item:nth-child(4){
+            grid-area: ads;
+            justify-self: stretch;
+            align-self: end;
+        }
+        div.grid-item:nth-child(5){
+            grid-area: aside;
+            justify-self: start;
+            align-self: end;
+        }
+        div.grid-item:nth-child(6){
+            grid-area: footer;
+            justify-self: stretch;
+            align-self: end;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </main>
+</body>
+</html>
