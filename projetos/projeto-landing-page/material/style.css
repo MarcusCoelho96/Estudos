@@ -1,0 +1,119 @@
+
+/* PASSO 1 - CONFIGURAÇÕES GERAIS */
+@charset utf-8;
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500&display=swap');
+
+:root{
+    --cor-background: #474747;
+    --cor-destaques: #BF3F34;
+    --cor-fontes: #F2F2F2;
+
+    --font-serifada: 'Cinzel', serif;
+    --font-sem-serifa: 'Libre Franklin', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+/* PASSO 2 - CONFIGURAÇÃO DO CABEÇALHO */
+header{
+    background-color: var(--cor-background);
+    padding: 5px 100px;
+}
+
+header img{
+    height: 60px;
+}
+
+header nav{
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 25px;
+}
+
+header a{
+    color: var(--cor-fontes);
+    text-decoration: none;
+    font-family: var(--font-serifada) ;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.pagina-atual{
+   border-bottom: 1px solid var(--cor-fontes);
+}
+
+a:hover{
+    border-bottom: 1px solid var(--cor-fontes);
+}
+
+
+
+/* PASSO 3 - DEFINIÇÃO DE PLANO DE FUNDO */
+body{
+    background-image: url(imagens/salaledsvermelhos.jpg);
+     width: 100vw; 
+    height: 100vh; 
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+/* PASSO 4 - CONFIGURAÇÃO DO CONTEÚDO PRINCIPAL */
+main{
+    position: absolute;
+    text-align: center;
+    color: var(--cor-fontes);
+    font-family: var(--font-serifada);
+    width: 100%;
+    top: 50%;
+    margin-top: -175px;
+}
+
+main h1{
+    font-size: 60px;
+    font-weight: 300;
+}
+
+main h2{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 40%;
+    letter-spacing: 0.5em;
+}
+
+/* PASSO 5 - LINKS DE MÍDIA SOCIAL */
+.midia-social{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.midia-social a{
+    margin: 0px 50px;
+}
+
+/* PASSO 5 - LINKS DE MÍDIA SOCIAL */
+footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    background-color: var(--cor-background);
+    padding: 20px 100px;
+    color: var(--cor-fontes);
+    font-family: var(--font-serifada);
+    text-align: center;
+}
+
+footer p{
+    display: inline;
+    margin: 0px 20px;
+}
