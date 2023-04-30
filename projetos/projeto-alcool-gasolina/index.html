@@ -13,9 +13,11 @@
             <img class="logo" src="img/logo.png" alt="logo - bomba de gasolina">
             <h1 class="title">Qual melhor opção?</h1>
 
-            <form class="form" action="">
+            <form class="form" onsubmit="calcular(event)">
                 <label for="alc">Alcool (preço por litro)</label>
-                <input class="input" 
+                <input 
+                id="alcool"
+                class="input" 
                 type="number" 
                 name="alc" 
                 min="1" 
@@ -25,7 +27,9 @@
                 >
 
                 <label for="gas">Gasolina (preço por litro)</label>
-                <input class="input" 
+                <input 
+                id="gasolina"
+                class="input" 
                 type="number" 
                 name="gas"
                 min="1"
@@ -37,17 +41,18 @@
                 <input class="button" type="submit" value="Calcular">
             </form>
 
-            <section class="result">
-                <span id="text-result">Compensa usar Alcool</span>
-                <span>Álcool R$4.90</span>
-                <span>Gasolina R$6.50</span>
+            <section id="content-result" class="result hide">
+                <span id="text-result"></span>
+                <span id="preco-alcool"></span>
+                <span id="preco-gasolina"></span>
             </section>
         </main>
 
         <div class="info">
             <span class="tooltip">Veja como é feito o calculo</span>
-            <a href="https://sujeitoprogramador.com" target="_blank" rel="external">
+            <a href="info.html" target="_blank" rel="external">
                 <img class="info-img" src="img/info.png" alt="Veja como é feito o calculo"></a>
         </div>
     </body>
+    <script src="js/script.js"></script>
 </html>

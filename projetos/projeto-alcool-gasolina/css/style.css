@@ -23,6 +23,15 @@ main.container{
     justify-content: center;
     align-items: center;
 }
+section.pag2{
+    padding: 20px;
+    border: 1px solid white;
+    text-align: center;
+}
+main a{
+    color: white;
+    cursor: pointer;
+}
 img.logo{
     max-width: 227px;
 }
@@ -51,7 +60,6 @@ input.button{
     border-radius: 4px;
     color: #FFF;
 }
-
 section.result{
     background-color: #00b63e;
     max-width: 520px;
@@ -66,6 +74,9 @@ section.result{
     flex-direction: column;
 
     transition: .8s;
+}
+section.hide{
+    display: none;
 }
 section.result:hover{
     transform: scale(1.1);
