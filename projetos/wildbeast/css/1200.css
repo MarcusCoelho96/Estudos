@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.estrutura{
+    grid:
+        "header  header   header"
+        "sidenav content  content"
+        "sidenav anuncios anuncios"
+        "footer  footer   footer"
+    ;
+}

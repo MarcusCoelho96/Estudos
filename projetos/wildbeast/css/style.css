@@ -17,7 +17,7 @@ a{
     text-decoration: none;
 }
 img{
-    max-width: 100%;
+    width: 100%;
     display: block;
     border-radius: 5px;
 }
@@ -153,12 +153,42 @@ p{
     position: relative;
     top: 2px;
 }
+.destaque{
+    font-size: 0.875em;
+    color: var(--cor-roxo-claro);
+    max-width: 16em;
+}
+.citacao, .atributos{
+    align-self: start;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+    background: linear-gradient(135deg, var(--cor-roxo), var(--cor-roxo-claro));
+}
+.citacao p{
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    color: white;
+}
+.atributos li{
+    color: white;
+    font-family: Courier, monospace;
+    font-size: 1.125em;
+    padding: 15px;
+}
+.atributos li + li{
+    border-top: 2px solid var(--cor-lilas);
+}
 .anuncios{
     grid-area: anuncios;
 
     display: grid;
     align-content: start;
     grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
     padding: 30px;
 }
