@@ -1,0 +1,41 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid: "header" 1fr
+          "nav" 1fr
+          "section" 3fr
+          "aside" 2fr
+          "footer" 1fr
+          / minmax(300px, 500px)
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+section{
+    grid-area: section;
+
+    max-width: 500px;
+    padding: 10px;
+}
+img{
+    max-width: 300px;
+}
+aside{
+    grid-area: aside;
+    max-width: 500px;
+    padding: 15px;
+}
+footer{
+    grid-area: footer;
+}
+p{
+    text-indent: 20px;
+    text-align: justify;
+}
