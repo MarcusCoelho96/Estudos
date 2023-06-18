@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 1920px;
+    grid-template-columns: minmax(200px, 300px), minmax(500px, 800px), minmax(200px, 400px);
+    grid-template-rows: auto;
+
+    grid: "header"  "header"     "header"
+          "nav"     "section"    "aside"
+          "footer"  "footer"     "footer"
+    ;
+}
+
+img{
+    max-width: 500px;
+}
+i#menu{
+    padding: 15px;
+}
+section{
+    justify-self: center;
+
+    max-width: 800px;
+}
+aside{
+    justify-self: center;
+
+    max-width: 800px;
+}
+menu ul a li{
+    padding: 15px;
+}

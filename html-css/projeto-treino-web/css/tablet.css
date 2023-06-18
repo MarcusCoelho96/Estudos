@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    min-width: 501px;
+    max-width: 900px;
+}
+
+section{
+    max-width: 600px;
+}
+
+aside{
+    max-width: 600px;
+}
+
+i#menu{
+    padding: 5px;
+}
+
+menu ul a li{
+    padding: 5px;
+}
