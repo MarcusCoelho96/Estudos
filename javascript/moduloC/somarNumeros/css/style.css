@@ -1,0 +1,22 @@
+body{
+    font: normal 18pt Arial;
+}
+input{
+    font: normal 18pt Arial;
+    width: 100px;
+}
+div#res{
+    margin-top: 20px;
+}
+
+/***********************************************************************************/
+/*prática.html*/
+
+fieldset{
+    max-width: 500px;
+    margin: auto;
+    line-height: 40px;
+}
+input#nome, input#telefone, input#email{
+ width: 100%;
+}
