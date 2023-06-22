@@ -11,22 +11,25 @@
     <h1>Pegando valores</h1>
 
     <fieldset>
-        <legend>Formulário</legend>
+        <legend>Preencha o formulário</legend>
         <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome">
+        <input type="text" name="nome" id="nome" required>
         <label for="telefone">Telefone:</label>
-        <input type="tel" name="telefone" id="telefone">
+        <input type="tel" name="telefone" id="telefone" required>
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" required>
         <label for="ano">Nascimento:</label>
-        <input type="number" name="ano" id="ano">
+        <input type="number" name="ano" id="ano" required>
         <input type="button" value="enviar" onclick="enviar()">
     </fieldset>
 
-    <div id="valor1">Valores</div>
-    <div id="valor2">Valores</div>
-    <div id="valor3">Valores</div>
-    <div id="valor4">Valores</div>
+    <fieldset>
+        <legend>Não se preucupe, esse sitema não contém banco. Os dados inseridos serão perdidos ao atualizar a página.</legend>
+        <div id="valor1">Valores</div>
+        <div id="valor2">Valores</div>
+        <div id="valor3">Valores</div>
+        <div id="valor4">Valores</div>
+    </fieldset>
 
 
     <script src="js/script.js"></script>

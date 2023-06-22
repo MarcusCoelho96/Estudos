@@ -17,6 +17,7 @@ fieldset{
     margin: auto;
     line-height: 40px;
 }
-input#nome, input#telefone, input#email{
+input#nome, input#telefone, input#email, input#ano{
  width: 100%;
+ display: inline-block;
 }
