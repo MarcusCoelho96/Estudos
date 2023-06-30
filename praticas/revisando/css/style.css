@@ -4,8 +4,6 @@
     padding: 0;
 }
 main{
-    min-width: 300px;
-    max-width: auto;
     display: grid;
 
     grid: "header" minmax(200px, auto)
@@ -13,7 +11,7 @@ main{
           "section" minmax(400px, auto)
           "aside" minmax(200px, auto)
           "footer" minmax(50px, auto)
-          / 1fr;
+          / minmax(200px, 899px);
     grid-gap: 10px;
 }
 header{
