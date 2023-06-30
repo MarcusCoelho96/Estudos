@@ -10,8 +10,8 @@ main{
     display: grid;
     grid:    "header header header" 1fr
              "nav section aside"    4fr
-             "footer footer footer" 1fr
-            / minmax(100px, 100px)     minmax(200px, 3fr)     minmax(200px, 2fr);
+             "footer footer footer" 50px
+            / minmax(100px, 100px) minmax(200px, 3fr) minmax(200px, 2fr);
     grid-gap: 10px;
 }
 header{
@@ -22,12 +22,27 @@ nav{
 }
 section{
     grid-area: section;
+    justify-self: end;
 }
 aside{
     grid-area: aside;
+    justify-self: start;
 }
 footer{
     grid-area: footer;
 }
-
+article#conteudo{
+    max-width: 800px;
+}
+article#side{
+    max-width: 500px;
+}
+ul{
+    display: grid;
+    grid:   "menu1" 1fr
+            "menu2" 1fr
+            "menu3" 1fr
+          / auto;
+    justify-items: center;
+}
 

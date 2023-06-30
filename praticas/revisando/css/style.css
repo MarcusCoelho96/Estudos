@@ -11,7 +11,7 @@ main{
           "section" minmax(400px, auto)
           "aside" minmax(200px, auto)
           "footer" minmax(50px, auto)
-          / minmax(200px, 899px);
+          / minmax(auto, 600px);
     grid-gap: 10px;
 }
 header{
@@ -25,9 +25,11 @@ nav{
 }
 section{
     grid-area: section;
+    justify-self: end;
 }
 aside{
     grid-area: aside;
+    justify-self: start;
 }
 footer{
     grid-area: footer;
@@ -96,7 +98,7 @@ iframe{
     min-height: 100px;
     box-shadow: 0 0 6px black;
 }
-article{
+div{
     display: grid;
     align-items: center;
     justify-content: center;
