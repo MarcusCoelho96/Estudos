@@ -33,11 +33,15 @@
         </section>
         <aside class="aside">
             <h2>Aside</h2>
-            <img src="img/pessoa-trabalhando-html-no-computador.jpg" alt="pessoa-trabalhando-html-no-computador">
+            <picture>
+                <source media="(min-width: 520px)" srcset="img/pessoa-trabalhando-html-no-computador.jpg">
+                <source media="(min-width: 370px)" srcset="img/pessoa-trabalhando-html-no-computador350.jpg">
+                <img src="img/pessoa-trabalhando-html-no-computador200.jpg" alt="pessoa-trabalhando-html-no-computador">
+            </picture>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora fugit laboriosam porro nostrum unde, nam harum eius perspiciatis minus ipsa, culpa quas vero eaque incidunt. Cum voluptas reprehenderit nam fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum culpa fuga obcaecati eius nihil aperiam similique, assumenda corrupti earum consequuntur autem quas mollitia odit laudantium rem! Dolore quas exercitationem vel.</p>
         </aside>
         <footer class="footer">
-            <p>Esta página foi desenvolvida por <a href="https://github.com/marcuscoelho96">Marcus Coelho</a></p>
+            <p>Esta página foi desenvolvida por <a id="mv" href="https://github.com/marcuscoelho96">Marcus Coelho</a></p>
         </footer>
         <div class="ponto-flutuante">
             <a href="https://github.com/marcuscoelho96"><abbr title="Marcus Coelho">
