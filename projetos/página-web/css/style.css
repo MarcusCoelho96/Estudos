@@ -6,6 +6,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+
+}
 div.container{
     display: grid;
     grid: "header" minmax(100px, auto)
@@ -15,6 +18,9 @@ div.container{
           "footer" minmax(50px, auto)
           / minmax(200px, 1fr);
           position: relative;
+
+          max-width: 600px;
+          margin: auto;
 }
 header.header{
     grid-area: header;
@@ -53,13 +59,21 @@ aside > picture{
     display: block;
     text-align: center;
 }
+picture > .imagem{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.400);
+    border-radius: 3px;
+}
 footer.footer{
     grid-area: footer;
+    text-align: center;
 }
 footer > p > a#mv{
     font-family: 'Dawning of a New Day', cursive;
     font-size: 1.5em;
     font-variant: none;
+}
+footer p.pix{
+    text-align: center;
 }
 div.ponto-flutuante{
     display: grid;
