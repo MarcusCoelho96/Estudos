@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+div.container{
+    max-width: 100vw;
+    margin: 0 20px;
+    gap: 20px;
+    grid: 
+          "header header header" minmax(100px, auto)
+          "sidenav section aside" minmax(100px, auto)
+          "footer footer footer" minmax(50px, auto)
+          / minmax(50px, 100px) minmax(200px, auto) minmax(200px, auto);
+}
+ul.menu{
+    text-align: left;
+    grid: 
+          "home" minmax(10px, 30px)
+          "formulario" minmax(10px, 30px)
+          "contato" minmax(10px, 30px)
+          / minmax(50px, 1fr);
+}
+section{
+    justify-content: end;
+    display: grid;
+    grid: 
+        "contain" auto
+        / minmax(300px, 500px);
+}
+div.contain{
+    grid-area: contain;
+}
+aside{
+    display: grid;
+    grid: 
+        "acontain" auto
+        / minmax(300px, 500px);
+}
+div.acontain{
+    grid-area: acontain;
+}
+aside img{
+    max-width: 300px;
+}
+footer > p{
+    text-align: center;
+}

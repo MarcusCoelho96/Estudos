@@ -32,6 +32,7 @@ nav.sidenav{
 }
 ul.menu{
     height: 100%;
+
     display: grid;
     grid: "home formulario contato" 1fr
             / 1fr 1fr 1fr;
@@ -55,9 +56,9 @@ section.section{
 aside.aside{
     grid-area: aside;
 }
-aside > picture{
+aside img{
     display: block;
-    text-align: center;
+    margin: auto;
 }
 picture > .imagem{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.400);
