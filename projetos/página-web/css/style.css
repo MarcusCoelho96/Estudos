@@ -11,14 +11,14 @@ body{
 }
 div.container{
     display: grid;
-    grid: "header" minmax(100px, auto)
+    grid: 
+          "header" minmax(100px, auto)
           "sidenav" minmax(50px, auto)
           "section" auto
           "aside" auto
           "footer" minmax(50px, auto)
           / minmax(200px, 1fr);
           position: relative;
-
           max-width: 600px;
           margin: auto;
 }
@@ -34,10 +34,10 @@ ul.menu{
     height: 100%;
 
     display: grid;
-    grid: "home formulario contato" 1fr
-            / 1fr 1fr 1fr;
+    grid: 
+           "home formulario contato" 1fr
+           / 1fr 1fr 1fr;
     justify-content: space-around;
-    align-items: center;
     text-align: center;
     list-style-type: none;
 }
@@ -78,14 +78,14 @@ footer p.pix{
 }
 div.ponto-flutuante{
     display: grid;
-    grid: "github" 1fr
-          "wpp" 1fr
-          / 1fr;
+    grid: 
+            "github" 1fr
+            "wpp" 1fr
+            / 1fr;
     position: sticky;
     bottom: 10px;
     width: 85px;
     margin: 2%;
-
 }
 img.icon{
     opacity: .5;

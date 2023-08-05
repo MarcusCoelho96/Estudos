@@ -11,7 +11,7 @@ div.container{
           / minmax(50px, 100px) minmax(200px, auto) minmax(200px, auto);
 }
 ul.menu{
-    text-align: left;
+    text-align: center;
     grid: 
           "home" minmax(10px, 30px)
           "formulario" minmax(10px, 30px)
@@ -22,8 +22,8 @@ section{
     justify-content: end;
     display: grid;
     grid: 
-        "contain" auto
-        / minmax(300px, 500px);
+           "contain" auto
+           / minmax(300px, 500px);
 }
 div.contain{
     grid-area: contain;
@@ -31,8 +31,8 @@ div.contain{
 aside{
     display: grid;
     grid: 
-        "acontain" auto
-        / minmax(300px, 500px);
+           "acontain" auto
+           / minmax(300px, 500px);
 }
 div.acontain{
     grid-area: acontain;
