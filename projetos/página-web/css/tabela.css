@@ -1,0 +1,24 @@
+@charset "UTF-8";
+table{
+    margin: auto;
+    max-width: 600px;
+    border-collapse: collapse;
+}
+caption, tr, th, td{
+    padding: 10px;
+    border: 1px solid black;
+}
+caption{
+    border-bottom: none;
+}
+div.circle{
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 6px rgba(0, 0, 0, 0.219);;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+div.circle > p{
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.219);
+}

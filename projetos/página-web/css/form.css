@@ -22,6 +22,7 @@ input{
 }
 input:focus-visible{
     background-color: bisque;
+    border-radius: 0;
 }
 input#button{
     display: block;
