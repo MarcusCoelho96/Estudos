@@ -92,8 +92,8 @@ div.duvida{
 div.duvida h3{
     border: 2px solid #FF725E;
     border-radius: 8px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+/*     border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; */
     cursor: pointer;
     padding: 24px;
 }
@@ -107,6 +107,15 @@ div.duvida p.paragrafo{
     border-top: none;
     border-radius: 0 0 8px 8px;
     margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+div.duvida.ativa p.paragrafo{
+    height: fit-content;
+    opacity: 1;
     padding: 24px;
 }
 footer{
